@@ -1,0 +1,25 @@
+{
+  "name": "jazz-ecard",
+  "version": "1.0.0",
+  "description": "birthday-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsahlsa/yasemin-bday.git"
+  },
+  "keywords": [],
+  "author": "Joe Sahlsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsahlsa/yasemin-bday/issues"
+  },
+  "homepage": "https://github.com/jsahlsa/yasemin-bday#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}

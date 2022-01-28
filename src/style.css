@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root {
+  --step-5: clamp(3.27rem, 2.98rem + 1.42vw, 4.58rem);
+  --step-6: clamp(3.92rem, 3.53rem + 1.95vw, 5.72rem);
+  --step-7: clamp(6rem, 5.75rem + 3.15vw, 13rem);
+}
+
+body {
+  background: hsla(170, 100%, 50%, 0.2);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--step-6);
+  line-height: 1;
+  margin: 0 auto 2rem auto;
+  font-family: 'Bangers', cursive;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: gray;
+
+  background-image: linear-gradient(
+    to left,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+  background-position: left;
+  background-size: 75%;
+  transform: skew(10deg, 3deg);
+}
+
+span {
+  font-size: var(--step-7);
+}
+
+.container {
+  border: red dashed 1px;
+  width: clamp(16rem, 87vw, 50rem);
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 100%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 15px;
+  border-image-source: linear-gradient(
+    to left,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+  box-shadow: 1px 1px 15px darkorchid;
+}
