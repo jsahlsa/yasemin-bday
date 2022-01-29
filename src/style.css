@@ -103,9 +103,30 @@ button::after {
     hsl(360, 100%, 50%)
   );
 }
+button:hover::after {
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+}
 
-button::after:hover {
-  border: hsl(0, 100%, 50%) 2px solid;
+@media (max-width: 1200px) {
+  button {
+    width: 50em;
+    height: 12em;
+    border-radius: 6em;
+  }
 }
 
 .container {
